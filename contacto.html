@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/javascript.js">
+
+
 </head>
+
 
 <body>
     <header>
@@ -64,28 +65,45 @@
                 <div class="row row-cols-12 row-cols-sm-12row-cols-md-12 g-12">
                     <div class="col">
                         <div class="card shadow-sm">
-
                             <div class="card-body">
                                 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-2 g-7">
                                     <img src="img/logo.png" alt="Logo" style="width:150px;">
                                     <h2 class="centrar">Para contactarnos porfavor ingresa tus datos</h2>
                                 </div>
-                                <form action="/action_page.php">
-                                    <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" name="nombre" required>
-                                    <label for="celular">Celular:</label>
-                                    <input type="number" class="form-control" id="celular" placeholder="Ingrese su número celular" name="celular" required>
-                                    <label for="correo">Correo electrónico:</label>
-                                    <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo" required>
-                                    <br>
-                                    <input type="submit">
-                                </form>
-                                <h4 class="centrar">En breves momentos te contactaremos!</h4>
+                                <div class="row">
+                                    <form method="post" action="action_page.php" id="formulario">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" name="nombre">
 
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="celular">Celular:</label>
+                                            <input type="number" class="form-control" id="celular" placeholder="Ingrese su número celular" name="celular">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="correo">Correo electrónico:</label>
+                                            <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo">
+
+                                        </div>
+                                        <br>
+                                        <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                                        <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                                        <div id="error" class="alert alert-danger" role="alert"></div>
+                                </div>
+                                </form>
                             </div>
+                            <h4 class="centrar">En breves momentos te contactaremos!</h4>
                         </div>
                     </div>
+                </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js "></script>
+
 </body>
 
 </html>
