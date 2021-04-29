@@ -23,9 +23,5 @@ $(document).ready(function() {
             event.preventDefault();
         }
     });
-    $("#enviar").click(function() {
-        $("#error").animate({
-            height: 'toggle'
-        });
-    });
+
 });
