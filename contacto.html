@@ -75,21 +75,23 @@
                                         <div class="form-group">
                                             <label for="nombre">Nombre:</label>
                                             <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" name="nombre">
-
+                                            <div id="errorname" class="alert alert-danger" role="alert"></div>
                                         </div>
                                         <div class="form-group">
                                             <label for="celular">Celular:</label>
                                             <input type="number" class="form-control" id="celular" placeholder="Ingrese su número celular" name="celular">
-
+                                            <div id="errorcel" class="alert alert-danger" role="alert"></div>
                                         </div>
                                         <div class="form-group">
                                             <label for="correo">Correo electrónico:</label>
                                             <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo">
-
+                                            <div id="errorcorreo" class="alert alert-danger" role="alert"></div>
                                         </div>
                                         <br>
                                         <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
                                         <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                                        <br>
+                                        <br>
                                         <div id="error" class="alert alert-danger" role="alert"></div>
                                 </div>
                                 </form>
