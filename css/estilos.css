@@ -1,129 +1,143 @@
-            .inicio {
-                text-align: right;
-                padding-right: 10px;
-            }
-            
-            body {
-                background: #3f5b8b;
-            }
-            
-            #Cinicio {
-                color: #ffffff;
-            }
-            /* colores y propiedades (franja negra)*/
-            
-            header {
-                width: 100%;
-            }
-            
-            .arriba {
-                width: 1000px;
-                margin: 30px auto;
-                background: #000000;
-            }
-            /* home etc*/
-            
-            .arriba ul {
-                list-style: none;
-            }
-            
-            .menu>li {
-                position: relative;
-                display: inline-block;
-            }
-            
-            .menu>li>a {
-                display: block;
-                padding: 15px 20px;
-                color: #ffffff;
-                text-decoration: none;
-            }
-            
-            .menu li a:hover {
-                color: #cf1c1c;
-                transition: all .3s;
-            }
-            /* desplegable*/
-            
-            .desplegable {
-                position: absolute;
-                background: #333333;
-                width: 120%;
-                visibility: hidden;
-                opacity: 0;
-                transition: opacity 1.5s;
-            }
-            
-            .desplegable li a {
-                display: block;
-                padding: 15px;
-                color: #fff;
-                text-decoration: none;
-            }
-            
-            .menu li:hover .desplegable {
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .proces {
-                text-align: center;
-                display: table;
-                width: 650px;
-                margin: 2rem auto;
-            }
-            
-            .i3 {
-                height: 400px;
-                margin-top: 0px;
-                margin-right: 50px;
-                text-align: center;
-            }
-            /* carousel*/
-            
-            .proces {
-                background-color: #eeeeee;
-            }
-            
-            .carousel-indicators {
-                background-color: black;
-            }
-            
-            .carousel-control-prev-icon {
-                background-color: #c40e0e;
-            }
-            
-            .carousel-control-next-icon {
-                background-color: #c40e0e;
-            }
-            
-            .carousel-inner img {
-                text-align: center;
-                height: 500px;
-            }
-            
-            #precios {
-                color: #c40e0e;
-                font-size: 1.4rem;
-                font-weight: 400;
-                text-align: center;
-            }
-            /*footer*/
-            
-            .main-footer {
-                width: 100%;
-                min-height: 100px;
-                height: auto;
-                background-color: #ccc;
-            }
-            
-            .map-responsive {
-                overflow: hidden;
-                padding-bottom: 50%;
-                position: relative;
-                height: 400px;
-            }
-            
-            #letra {
-                font-family: 'Times New Roman', Times, serif;
-            }
+.inicio {
+    text-align: right;
+    padding-right: 10px;
+}
+
+body {
+    background: #3f5b8b;
+}
+
+.centrar {
+    text-align: center;
+}
+
+#Cinicio {
+    color: #ffffff;
+}
+
+
+/* colores y propiedades (franja negra)*/
+
+header {
+    width: 100%;
+}
+
+.arriba {
+    width: 1000px;
+    margin: 30px auto;
+    background: #000000;
+}
+
+
+/* home etc*/
+
+.arriba ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #cf1c1c;
+    transition: all .3s;
+}
+
+
+/* desplegable*/
+
+.desplegable {
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.desplegable li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li:hover .desplegable {
+    visibility: visible;
+    opacity: 1;
+}
+
+.proces {
+    text-align: center;
+    display: table;
+    width: 650px;
+    margin: 2rem auto;
+}
+
+.i3 {
+    height: 400px;
+    margin-top: 0px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+/* carousel*/
+
+.proces {
+    background-color: #eeeeee;
+}
+
+.carousel-indicators {
+    background-color: black;
+}
+
+.carousel-control-prev-icon {
+    background-color: #c40e0e;
+}
+
+.carousel-control-next-icon {
+    background-color: #c40e0e;
+}
+
+.carousel-inner img {
+    text-align: center;
+    height: 500px;
+}
+
+#precios {
+    color: #c40e0e;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*footer*/
+
+.main-footer {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-color: #ccc;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 400px;
+}
+
+#letra {
+    font-family: 'Times New Roman', Times, serif;
+}
