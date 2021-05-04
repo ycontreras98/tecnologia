@@ -58,7 +58,7 @@ function validaCelular() {
 
 function validar(e) {
     borrarError();
-    if (validaNombre() && validaEdad() && validaCelular() && confirm("Pulsa aceptar si deseas enviar el formulario")) {
+    if (validaNombre() && validaEdad() && validaCelular() && confirm()) {
         return true
     } else {
         e.preventDefault();
@@ -83,4 +83,17 @@ function borrarError() {
     for (var i = 0; i < formulario.elements.length; i++) {
         formulario.elements[i].className = "";
     }
+}
+
+
+function enviarEmail(correo) {
+    console.log(correo, 'Esto esta funkando?');
+    Email.send({
+        SecureToken: "153ba25a-b403-4154-9189-059a32e41254",
+        To: correo,
+        From: "blothstore@gmail.com",
+        Subject: "BlothStore",
+        Body: "Te contactaremos pronto",
+    })
+
 }
