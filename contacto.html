@@ -71,7 +71,7 @@
                                     <h2 class="centrar">Para contactarnos porfavor ingresa tus datos</h2>
                                 </div>
                                 <div class="row">
-                                    <form action="procesar.php" method="post" id="miFormulario">
+                                    <form method="post" id="miFormulario">
                                         <table>
                                             <tr>
                                                 <td>Nombre: </td>
@@ -87,10 +87,10 @@
                                             </tr>
                                             <td>Email: </td>
                                             <td>
-                                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+                                                <input type="email" name="email" id="emailToSend" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
                                             </td>
                                             <tr>
-                                                <td>celular: </td>
+                                                <td>Celular: </td>
                                                 <td>
                                                     <input type="text" name="celular" id="celular" pattern="[0-9]{9}" title="Numero de 9 cifras" required/>
                                                 </td>
@@ -98,7 +98,7 @@
                                         </table>
                                         <p id="mensajeError"></p>
                                         <p>
-                                            <input type="submit" value="Enviar" id="enviar" />
+                                            <input type="submit" value="Enviar Email" onclick="enviarEmail(document.getElementById('emailToSend').value)" />
                                             <input type="reset" value="Borrar" id="borrar" />
                                         </p>
                                     </form>
@@ -111,7 +111,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="script.js "></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
 </body>
 
